@@ -1,6 +1,6 @@
 print("WIFI SETTING...")
 wifi.setmode(wifi.STATION)
-wifi.sta.config("openlab","openlab123")
+wifi.sta.config("wifi_name","wifi_passwd")
 print("IP IS",wifi.sta.getip())
 led1 = 0
 led2 = 4
