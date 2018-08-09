@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <body>
+        <h1>welcome to my http server!</h1>
+
+        <h2>测试数据库模块</h2>
+        <form action="/cgi/mysql/insert" method="GET">
+            name:<br>
+            <input type="text" name="name" value="zhangsan">
+            <br>
+            sex:<br>
+            <input type="text" name="sex" value="man">
+            <br>
+            phone:<br>
+            <input type="text" name="phone" value="1234567890">
+            <br>
+            <input type="submit" value="Submit">
+        </form> 
+        <br/>
+        <br/>
+        <a href="./cgi/mysql/select">查询</a>
+        <br/>
+        <br/>
+        <h2>测试网络计算器</h2>
+        <form action="./cgi/cal/cal" method="GET">
+            First data:<br>
+            <input type="text" name="firstdata" value="100">
+            <br>
+            Last data:<br>
+            <input type="text" name="lastdata" value="20">
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+        <br/>
+        <br/>
+
+        <h2>测试日期计算器</h2>
+        <form action="./cgi/date/date_cal" method="GET">
+            年:<br>
+            <input type="text" name="year" value="1900">
+            <br>
+            月:<br>
+            <input type="text" name="month" value="1">
+            <br>
+            日:<br>
+            <input type="text" name="day" value="1">
+            <br>
+            多少天之后?<br>
+            <input type="text" name="num" value="100">
+            <br>
+            <input type="submit" value="提交">
+        </form>
+        <br>
+
+        <h2>测试灯光控制</h2>
+        <form action="./cgi/tcp_client/client" method="GET">
+            开关:<br>
+            <input type="text" name="button" value="open">
+            <br>
+            设备ID:<br>
+            <input type="text" name="id" value="1">
+            <br>
+            <input type="submit" value="提交">
+        </form>
+
+        <img src="./img/cat.jpg"/>
+    </body>
+</html>
