@@ -1,0 +1,23 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BURSIZE	url.h	4;"	d
+MAX_SIZE	httpServer.h	21;"	d
+blank_line	httpServer.h	/^const char* blank_line = "\\r\\n";$/;"	v
+dec2hex	url.c	/^char dec2hex(short int c)$/;"	f
+echo_error	httpServer.c	/^void echo_error(int sock)$/;"	f
+echo_www	httpServer.c	/^int echo_www(int sock, const char* resource_path, int size)$/;"	f
+exe_cgi	httpServer.c	/^static int exe_cgi(int sock, char* method, char* resource_path, char* query_string)$/;"	f	file:
+get_line	httpServer.c	/^int get_line(int sock, char line[], int size)$/;"	f
+handle_hander	httpServer.c	/^void handle_hander(int sock)$/;"	f
+handle_request	httpServer.c	/^static void* handle_request(void* arg)$/;"	f	file:
+hex2dec	url.c	/^int hex2dec(char c)$/;"	f
+main	httpServer.c	/^int main(int argc, char* argv[])$/;"	f
+startUp	httpServer.c	/^int startUp(int port)$/;"	f
+status_line	httpServer.h	/^const char* status_line = "HTTP\/1.0 200 OK\\r\\n";$/;"	v
+status_response	httpServer.c	/^void status_response(int sock, int status_code)$/;"	f
+urldecode	url.c	/^void urldecode(char url[])$/;"	f
+urlencode	url.c	/^void urlencode(char url[])$/;"	f

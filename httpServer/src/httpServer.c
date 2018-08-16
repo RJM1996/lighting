@@ -265,7 +265,7 @@ static int exe_cgi(int sock, char* method, char* resource_path, char* query_stri
 static void* handle_request(void* arg)
 {
     int sock = (int)arg;
-    char line[MAX_SIZE];
+    char line[MAX_SIZE] = {0};
     int status_code = 200; // 状态码
 
     // 一行行提取请求信息
@@ -282,7 +282,7 @@ static void* handle_request(void* arg)
     // 首先提取出请求方法
     size_t i = 0;
     size_t j = 0;
-    char method[MAX_SIZE/4];
+    char method[MAX_SIZE/4] = {0};
     while(i < sizeof(method)-1 && j < sizeof(line) && !isspace(line[j]))
     {
         method[i++] = line[j++];
@@ -295,7 +295,7 @@ static void* handle_request(void* arg)
         j++;
     }
     // 此时 j 指向了 URL
-    char url[MAX_SIZE];
+    char url[MAX_SIZE] = {0};
     i = 0;
     while(i < sizeof(url)-1 && j < sizeof(line) && !isspace(line[j]))
     {
@@ -303,7 +303,7 @@ static void* handle_request(void* arg)
         i++, j++;
     }
     url[i] = '\0';
-    urldecode(url);
+    urldecode(url); // 解码
     // printf("url: %s\n", url);
 
     // 到这里 url 也提取到了
